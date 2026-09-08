@@ -13,7 +13,7 @@
   "dependencies": {
     "@ai-sdk/groq": "^3.0.31",
     "@ai-sdk/openai": "^3.0.0",
-    "@ai-sdk/react": "^3.0.0",
+    "@ai-sdk/react": "^4.0.16",
     "@auth0/ai-vercel": "^5.0.0",
     "@auth0/nextjs-auth0": "^4.24.0",
     "@types/better-sqlite3": "^7.6.13",
