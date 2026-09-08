@@ -72,7 +72,7 @@ export default async function Home() {
           </div>
 
           {(session.user?.email !== "demo@intent-agent.local") && (
-            <a href="/api/auth/logout" className="text-[10px] text-zinc-600 hover:text-zinc-400 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500 rounded px-1">Sign out</a>
+            <Link href="/api/auth/logout" className="text-[10px] text-zinc-600 hover:text-zinc-400 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500 rounded px-1">Sign out</Link>
           )}
         </nav>
       </header>

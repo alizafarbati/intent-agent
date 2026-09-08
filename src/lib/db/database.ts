@@ -1,5 +1,6 @@
 import Database from "better-sqlite3";
 import path from "path";
+import fs from "fs";
 
 const DB_PATH = process.env.DB_PATH || (process.env.VERCEL ? "/tmp/intent-agent.db" : path.join(process.cwd(), "data", "intent-agent.db"));
 
@@ -8,7 +9,6 @@ let db: Database.Database | null = null;
 function getDb(): Database.Database {
   if (db) return db;
 
-  const fs = require("fs");
   const dir = path.dirname(DB_PATH);
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });

@@ -25,7 +25,7 @@ type SideView = "intent" | "permissions" | "connections";
 
 const suggestions = [
   { icon: "📧", text: "Search my Gmail for recent emails", label: "Gmail", desc: "Recent emails" },
-  { icon: "📅", text: "Show my calendar events for today", label: "Calendar", desc: "Today's events" },
+  { icon: "📅", text: "Show my calendar events for today", label: "Calendar", desc: "Today&apos;s events" },
   { icon: "🐙", text: "List my GitHub repositories", label: "GitHub", desc: "My repos" },
   { icon: "💬", text: "List my Slack channels", label: "Slack", desc: "My channels" },
 ];
@@ -828,7 +828,7 @@ export default function ChatWindow({ user }: Props) {
           <div className="bg-[#0b1d27] border border-[color:var(--line)] rounded-2xl p-6 max-w-md w-full shadow-2xl shadow-cyan-900/20 animate-scale-in">
             <h2 className="text-lg font-semibold text-[color:var(--text)] mb-2">Groq API Key Required</h2>
             <p className="text-sm text-[color:var(--muted)] mb-5 leading-relaxed">
-              To use Real Mode, you need a Groq API key to power the language model. Your key is stored only in your browser's local storage and sent directly to the backend.
+              To use Real Mode, you need a Groq API key to power the language model. Your key is stored only in your browser&apos;s local storage and sent directly to the backend.
             </p>
             <form onSubmit={handleSaveGroqKey} className="space-y-4">
               <div>
