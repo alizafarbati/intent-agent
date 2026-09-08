@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@ai-sdk/groq": "^3.0.31",
+    "@ai-sdk/groq": "^4.0.5",
     "@ai-sdk/openai": "^3.0.0",
     "@ai-sdk/react": "^4.0.16",
     "@auth0/ai-vercel": "^5.0.0",
